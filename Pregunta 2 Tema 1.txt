@@ -1,0 +1,79 @@
+
+Aquí tienes los pasos detallados para realizar cada una de las tareas relacionadas con Git y Visual Studio Code, incluyendo los comandos necesarios para ejecutarlas desde la consola.
+
+1) Configurar Git desde la línea de comandos
+Abre una terminal.
+Configura tu nombre y correo como desarrollador:
+bash
+Copiar código
+git config --global user.name "TuNombre"
+git config --global user.email "TuCorreo@example.com"
+Cambia la rama por defecto de master a main:
+bash
+Copiar código
+git config --global init.defaultBranch main
+Verifica que los cambios se aplicaron correctamente:
+bash
+Copiar código
+git config --global --list
+
+2) Clonar el repositorio desde Visual Studio Code
+Abre Visual Studio Code.
+En la pantalla de inicio, selecciona "Clonar un repositorio".
+Ingresa la URL del repositorio:
+https://github.com/davidgacaeduxuntagal/Curso24-25-MP0487-CD.git
+Elige una ubicación en tu máquina donde guardarás el clon.
+Una vez completado, el repositorio se abrirá automáticamente en VSC.
+Comando equivalente desde la consola:
+bash
+Copiar código
+git clone https://github.com/davidgacaeduxuntagal/Curso24-25-MP0487-CD.git
+
+3) Crear una rama y modificar código
+Desde Visual Studio Code:
+Abre el menú de control de código fuente (icono de la rama en la barra lateral izquierda).
+Haz clic en el botón de ramas (en la parte inferior de la ventana de VSC).
+Selecciona "Crear nueva rama" e ingresa un nombre para la rama.
+Haz cambios en los archivos Java y guarda los cambios.
+Comando equivalente desde la consola:
+bash
+Copiar código
+git checkout -b nombre_de_la_rama
+
+4) Añadir cambios a la staging area y hacer un commit
+Desde Visual Studio Code:
+Ve al menú de control de código fuente.
+Verás los archivos modificados. Haz clic en el botón + junto a cada archivo para añadirlo al área de preparación (staging area).
+Escribe un mensaje de commit en el cuadro de texto superior.
+Haz clic en ✔ para realizar el commit.
+Comando equivalente desde la consola:
+bash
+Copiar código
+git add .
+git commit -m "Mensaje del commit"
+
+5) Sincronizar los cambios con GitHub
+Si tienes permisos para el repositorio original, puedes usar:
+bash
+Copiar código
+git push origin nombre_de_la_rama
+Desde Visual Studio Code, ve al menú de control de código fuente y haz clic en "Sincronizar cambios".
+Si no tienes permisos, GitHub devolverá un error. En ese caso, puedes:
+Hacer un fork del repositorio y trabajar desde tu propio repositorio.
+Solicitar permisos al administrador del repositorio.
+
+6) Crear un fork y clonarlo
+Ve al repositorio en GitHub y haz clic en Fork (arriba a la derecha).
+Una vez creado el fork, copia la URL de tu repositorio.
+En Visual Studio Code, clona tu fork usando el mismo procedimiento que en el paso 2.
+
+7) Cambiar el código y realizar una Pull Request
+Cambiar código:
+En tu repositorio fork, realiza cambios en el código dentro de la rama main.
+Guarda y realiza un commit.
+Crear una Pull Request:
+Desde Visual Studio Code:
+Ve al menú de control de código fuente.
+Haz clic en el botón Crear Pull Request.
+Escribe el mensaje: "Este es mi paso 8 de la tarea 1 de Entornos de Desarrollo".
+O directamente desde GitHub, ve al repositorio original y crea una Pull Request.
